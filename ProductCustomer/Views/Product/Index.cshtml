@@ -1,0 +1,49 @@
+﻿
+@model IEnumerable<ProductCustomer.Models.Product>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Products List</h2>
+        </div>
+        <div class="col-6 text-right">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-primary">Create New Product</a>
+        </div>
+    </div>
+    <br />
+
+    @if(Model.Count() > 0)
+            {
+                <table class="table table-bordered table-striped" style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>
+                                Product Name
+                            </th>
+                            <th>
+                                Customer
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach(var product in Model)
+                {
+                    <tr>
+                        <td width="30%">@product.ProductName</td>
+                        <td width="30%">@product.Customer</td>
+                        <td width="30%">@product.Id</td>
+                    </tr>
+                }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p>No Products Created Yet</p>
+            }
+
+</div>
