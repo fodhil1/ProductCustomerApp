@@ -75,8 +75,44 @@ namespace ProductCustomer.Controllers
              _db.Costs.Remove(obj);
              _db.SaveChanges();
              return RedirectToAction("Index");
-            
 
         }
+
+
+        ///////      ///////////////
+
+        //Get Update
+        public IActionResult Update(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var obj = _db.Costs.Find(id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+       
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdatePost(Cost obj)
+        {
+            if (ModelState.IsValid)
+            {
+                if (ModelState.IsValid) { }
+                _db.Costs.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+
+        }
+
+
+
     }
 }

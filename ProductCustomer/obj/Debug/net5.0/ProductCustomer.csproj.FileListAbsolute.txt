@@ -434,3 +434,4 @@ C:\Users\Fodhil Zidane\Source\Repos\ProductCustomer\ProductCustomer\obj\Debug\ne
 C:\Users\Fodhil Zidane\Source\Repos\ProductCustomer\ProductCustomer\obj\Debug\net5.0\Razor\Views\Cost\Create.cshtml.g.cs
 C:\Users\Fodhil Zidane\Source\Repos\ProductCustomer\ProductCustomer\obj\Debug\net5.0\Razor\Views\Cost\Index.cshtml.g.cs
 C:\Users\Fodhil Zidane\Source\Repos\ProductCustomer\ProductCustomer\obj\Debug\net5.0\Razor\Views\Cost\Delete.cshtml.g.cs
+C:\Users\Fodhil Zidane\Source\Repos\ProductCustomer\ProductCustomer\obj\Debug\net5.0\Razor\Views\Cost\Update.cshtml.g.cs
